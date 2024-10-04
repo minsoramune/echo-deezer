@@ -1,1 +1,1 @@
-{"commit-log":"- Update to newest echo\n\nYou now should be able to remove/add more than one song from/to a playlist.\nAlso saving stuff to directly to your library should be possible ~LuftVerbot","status":"success","elapsed-time":2649.178584649,"workflow":{"id":11168957543,"title":"Update to newest echo"}}
+{"commit-log":"- quick fix\n\nSmall fix for adding/deleting playlist tracks ~LuftVerbot","status":"success","elapsed-time":10175.745174318,"workflow":{"id":11183918734,"title":"quick fix"}}
