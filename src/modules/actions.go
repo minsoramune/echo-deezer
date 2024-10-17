@@ -107,7 +107,6 @@ func DownloadArtifacts(runID int64) error {
 		return err
 	}
 
-	func main() {
 	files, _ := os.ReadDir("archive")
 	Parallel(files, func(file os.DirEntry) {
 		name := file.Name()
@@ -115,7 +114,6 @@ func DownloadArtifacts(runID int64) error {
 			os.Remove("archive/" + name)
 		}
 	})
-}
 
 	println("Artifacts downloaded successfully")
 	return nil
