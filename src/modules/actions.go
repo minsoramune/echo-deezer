@@ -107,12 +107,15 @@ func DownloadArtifacts(runID int64) error {
 		return err
 	}
 
+	func main() {
 	files, _ := os.ReadDir("archive")
 	Parallel(files, func(file os.DirEntry) {
-		if file.IsDir() || file.Name()[len(file.Name())-4:] != ".apk" {
-			os.Remove("archive/" + file.Name())
+		name := file.Name()
+		if file.IsDir() || (!strings.HasSuffix(name, ".eapk") && !strings.HasSuffix(name, ".apk")) {
+			os.Remove("archive/" + name)
 		}
 	})
+}
 
 	println("Artifacts downloaded successfully")
 	return nil
